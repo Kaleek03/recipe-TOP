@@ -24,8 +24,8 @@ body {
 }
 
 .logo {
-    position:fixed;
-    top: 0.2em;
+    position:relative;
+    bottom: 53px;
     left:0px;
     height:40px;
     width:40px;
@@ -54,7 +54,7 @@ body {
     margin-top: 0px;
 }
 
-button {
+.button1 {
     color:#e5e7eb;
     background-color: #3882f6;
     border: 0px;
@@ -64,17 +64,22 @@ button {
    
 }
 
-.blankTop-imgcontainer {
+.blankTop-imgContainer {
     display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    
 }
     
  .blankTop-img {
     flex: 1;
+    min-width: 0;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-left: 700px;
     position: relative;
-    height: 290px;
-    width: 400px;
-    left: 600px;
-    top: -200px;  
+    bottom: 200px
 }
 
 
@@ -137,6 +142,53 @@ padding-bottom: 37px;
     
 }
 
+.action {
+    height: 200px;
+}
+
+.action-container {
+    display: flex;
+    background-color: #3882f6;
+    max-width: 800px;
+    height: 125px;
+    min-width: 0;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    
+}
+
+.cap {
+    font-size: 18px;
+    font-weight: bold;
+    color:#e5e7eb;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+}
+
+.cap > #sub {
+    color: #e5e7eb;   
+    font-style: italic;
+    position:relative;
+    right: 135px;
+    margin-top: 2px;
+}
+
+.button2 {
+    flex: 0 0 50%;
+    background-color: #3882f6;
+    border-color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    font-weight: bold;
+    color:#e5e7eb;
+    max-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 60px;
+}
 
 
     
